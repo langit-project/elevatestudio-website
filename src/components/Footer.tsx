@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import {
   BiLogoFacebookCircle,
   BiLogoInstagram,
@@ -8,18 +7,20 @@ import {
   BiLogoYoutube,
 } from "react-icons/bi";
 import { FaXTwitter } from "react-icons/fa6";
+import type { IconType } from "react-icons";
 import { navLinks } from "@/data/navigation";
+import { socialLinks } from "@/data/contact";
 import { NavAction } from "@/components/shared/NavAction";
 
 const footerNavLinks = [...navLinks, { label: "Contact", href: "/#contact" }];
 
-const socialIcons = [
-  { icon: BiLogoFacebookCircle, name: "Facebook" },
-  { icon: BiLogoInstagram, name: "Instagram" },
-  { icon: FaXTwitter, name: "X" },
-  { icon: BiLogoLinkedinSquare, name: "LinkedIn" },
-  { icon: BiLogoYoutube, name: "YouTube" },
-];
+const socialIconMap: Record<string, IconType> = {
+  Facebook: BiLogoFacebookCircle,
+  Instagram: BiLogoInstagram,
+  X: FaXTwitter,
+  LinkedIn: BiLogoLinkedinSquare,
+  YouTube: BiLogoYoutube,
+};
 
 export function Footer() {
   return (
@@ -44,8 +45,8 @@ export function Footer() {
             ))}
           </ul>
           <div className="flex items-start justify-start justify-items-center gap-x-3 lg:justify-self-end">
-            {socialIcons.map((social) => (
-              <NavAction key={social.name} variant="social" icon={social.icon} label={social.name} />
+            {socialLinks.map((social) => (
+              <NavAction key={social.name} variant="social" href={social.href} icon={socialIconMap[social.name]} label={social.name} />
             ))}
           </div>
         </div>

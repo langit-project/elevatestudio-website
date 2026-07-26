@@ -1,7 +1,6 @@
 "use client";
 
 import { ElevateButton } from "@/components/shared/ElevateButton";
-import React from "react";
 import { motion } from "framer-motion";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { ServiceCard } from "@/components/shared/ServiceCard";

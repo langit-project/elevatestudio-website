@@ -62,6 +62,7 @@ Website presentasi dan portofolio resmi Elevate Studios, dibangun sebagai SPA de
 - [ ] Responsive testing (mobile, tablet, desktop)
 - [ ] Image optimization & lazy loading
 - [ ] Accessibility audit
+- [ ] Chunk size optimization (currently >500kB)
 
 ---
 
@@ -87,6 +88,8 @@ Website presentasi dan portofolio resmi Elevate Studios, dibangun sebagai SPA de
 - [ ] E2E tests (optional)
 
 ### Deployment
+- [x] Vercel configuration (`vercel.json`)
+- [x] Build passing (zero TypeScript errors)
 - [ ] Vercel deployment
 - [ ] Custom domain (if any)
 - [ ] CI/CD pipeline

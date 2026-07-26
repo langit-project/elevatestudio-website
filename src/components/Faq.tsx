@@ -7,7 +7,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ElevateButton } from "@/components/shared/ElevateButton";
-import React from "react";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { faqItems } from "@/data/faq";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { useMediaQuery } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
 import { ElevateButton } from "@/components/shared/ElevateButton";

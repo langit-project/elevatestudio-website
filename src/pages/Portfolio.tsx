@@ -1,4 +1,3 @@
-import React from "react";
 import { useSearchParams, Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { FilterTabs } from "@/components/shared/FilterTabs";

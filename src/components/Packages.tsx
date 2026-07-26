@@ -1,7 +1,6 @@
 "use client";
 
 import { ElevateButton } from "@/components/shared/ElevateButton";
-import React from "react";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { packages } from "@/data/packages";
 import { Check } from "lucide-react";

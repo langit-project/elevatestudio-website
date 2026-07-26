@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { ElevateButton } from "@/components/shared/ElevateButton";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { StatCard } from "@/components/shared/StatCard";

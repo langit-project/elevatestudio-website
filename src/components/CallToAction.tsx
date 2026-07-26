@@ -1,7 +1,6 @@
 "use client";
 
 import { ElevateButton } from "@/components/shared/ElevateButton";
-import React from "react";
 
 export function CallToAction() {
   return (

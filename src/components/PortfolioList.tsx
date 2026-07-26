@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { portfolioItems } from "@/data/portfolio";
 import { SectionHeader } from "@/components/shared/SectionHeader";

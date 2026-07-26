@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ElevateButton } from "@/components/shared/ElevateButton";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";

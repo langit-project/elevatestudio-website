@@ -588,9 +588,9 @@ const ComponentsPage = () => {
                     NavAction — Social variant (scale hover)
                   </p>
                   <div className="flex gap-3 bg-accent-yellow p-4 rounded-lg">
-                    <NavAction variant="social" icon={Camera} label="Instagram" />
-                    <NavAction variant="social" icon={Video} label="YouTube" />
-                    <NavAction variant="social" icon={Users} label="LinkedIn" />
+                    <NavAction variant="social" href="#" icon={Camera} label="Instagram" />
+                    <NavAction variant="social" href="#" icon={Video} label="YouTube" />
+                    <NavAction variant="social" href="#" icon={Users} label="LinkedIn" />
                   </div>
                 </div>
       </div>
