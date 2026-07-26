@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/league-spartan";
+@import "@fontsource-variable/quicksand";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Elevate Color Tokens */
+  --color-primary-black: #16140a;
+  --color-primary-white: #ffffff;
+  --color-accent-yellow: #ffce08;
+  --color-dark-accent: #54351b;
+  --color-destructive: #b91c1c;
+  --color-destructive-foreground: #ffffff;
+
+  /* Typography */
+  --font-logo: "League Spartan Variable", "League Spartan", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "League Spartan Variable", "League Spartan", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Quicksand Variable", "Quicksand", ui-sans-serif, system-ui, sans-serif;
+
+  /* Shadcn UI Overrides with Elevate Tokens */
+  --color-background: var(--color-primary-white);
+  --color-foreground: var(--color-primary-black);
+
+  --color-primary: var(--color-primary-black);
+  --color-primary-foreground: var(--color-primary-white);
+
+  --color-secondary: var(--color-accent-yellow);
+  --color-secondary-foreground: var(--color-primary-black);
+
+  --color-accent: var(--color-accent-yellow);
+  --color-accent-foreground: var(--color-primary-black);
+
+  --color-muted: color-mix(in srgb, var(--color-primary-black) 8%, transparent);
+  --color-muted-foreground: color-mix(in srgb, var(--color-primary-black) 55%, transparent);
+
+  --color-card: var(--color-primary-white);
+  --color-card-foreground: var(--color-primary-black);
+
+  --color-popover: var(--color-primary-white);
+  --color-popover-foreground: var(--color-primary-black);
+
+  --color-border: color-mix(in srgb, var(--color-primary-black) 10%, transparent);
+  --color-input: color-mix(in srgb, var(--color-primary-black) 10%, transparent);
+  --color-ring: var(--color-primary-black);
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(var(--radius-lg) - 2px);
+  --radius-sm: calc(var(--radius-lg) - 4px);
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  body {
+    @apply font-body antialiased bg-background text-foreground;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+}
+
+@layer components {
+}
