@@ -95,8 +95,9 @@ Website presentasi dan portofolio resmi Elevate Studios, dibangun sebagai SPA de
 - [ ] CI/CD pipeline
 
 ### Polish
-- [ ] 404 page
-- [ ] Loading states
+- [x] 404 page
+- [x] Loading states (lazy loading + Suspense)
+- [x] Code splitting (lazy page chunks via React.lazy)
 - [ ] Error boundaries
 - [ ] prefers-reduced-motion support
 - [ ] Print styles
